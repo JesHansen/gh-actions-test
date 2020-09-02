@@ -27,6 +27,5 @@ jobs:
         run: |
           myFancyToken=${{ secrets.GITHUB_TOKEN }}
           echo Token lenght is
-          tlen = $(expr length $myFancyToken)
-          echo $tlen
+          echo $myFancyToken | wc -c
           echo Tadaa!
