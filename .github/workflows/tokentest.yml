@@ -35,7 +35,7 @@ jobs:
       # Is there a token here?
       - name: Token Test
         run: |
-          myFancyToken=${secrets.GITHUB_TOKEN}
+          myFancyToken=${{ secrets.GITHUB_TOKEN }}
           echo Token lenght is
           tlen = expr length myFancyToken
           echo tlen
