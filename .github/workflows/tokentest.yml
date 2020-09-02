@@ -28,4 +28,6 @@ jobs:
           myFancyToken=${{ secrets.GITHUB_TOKEN }}
           echo Token lenght is
           echo $myFancyToken | wc -c
+          start="${myFancyToken:0:4}"
+          echo "Min mønt er: $start ..."
           echo Tadaa!
